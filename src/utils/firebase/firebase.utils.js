@@ -5,6 +5,7 @@ import {
     signInWithRedirect,
     signInWithPopup,
     GoogleAuthProvider,
+    FacebookAuthProvider
 } from 'firebase/auth';
 import {
     getFirestore,
@@ -32,6 +33,9 @@ const firebaseConfig = {
 
   export const auth= getAuth()
   export const signInWithGooglePopup=()=>signInWithPopup(auth,provider);
+  export const signInWithGoogleRedirect = ()=> signInWithRedirect(auth,provider);
+
+  
 
   export const db=getFirestore();
 
