@@ -99,7 +99,7 @@ const SignUpForm = () =>{
             name='confirmPassword' 
             value={confirmPassword}/>
 
-            <Button type='submit'>Sign Up</Button>
+            <Button childern ="Sign Up" type='submit'></Button>
 
             </form>
         </div>
