@@ -2,7 +2,7 @@ import {Routes,Route} from 'react-router-dom';
 
 import Navigation from './routes/navgation/navigation.component';
 import Home from './routes/home/home.component';
-import SignIn from './routes/sign-in/sign-in.component';
+import Authentication from './routes/authentication/authentication.component';
 // import './categories.styles.scss';
 
 const App = () => {
@@ -24,7 +24,7 @@ const Shop= ()=>{
         {/* index =true tells this route is that when you match just slash, so with nothing on it, then this should home component. */}
 
         <Route path='shop' element={<Shop/>}/>
-        <Route path='signin' element={<SignIn/>}/>
+        <Route path='auth' element={<Authentication/>}/>
       </Route>
      
      
