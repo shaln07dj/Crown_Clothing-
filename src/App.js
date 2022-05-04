@@ -4,18 +4,10 @@ import Navigation from './routes/navgation/navigation.component';
 import Home from './routes/home/home.component';
 import Authentication from './routes/authentication/authentication.component';
 // import './categories.styles.scss';
-
+import Shop from './routes/shops/shop.component';
 const App = () => {
 
 
-const Shop= ()=>{
-  return(
-    <div>
-      <h1>I am Shop</h1>
-    </div>
-
-  )
-}
 
   return (
     <Routes>
