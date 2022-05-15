@@ -1,7 +1,7 @@
 .cart-dropdown-container {
     position: absolute;
-    width: 250px;
-    height: 340px;
+    width: 300px;
+    height: 400px;
     display: flex;
     flex-direction: column;
     padding: 20px;
@@ -17,14 +17,38 @@
     }
   
     .cart-items {
-      height: 240px;
+      height: 300px;
       display: flex;
       flex-direction: column;
       overflow: scroll;
+      overflow-x: hidden;
     }
-  
+    .cart-items::-webkit-scrollbar {
+        width: 5px;
+      
+      
+     
+       
+        border-radius: 0px;
+        border-bottom: 0px;
+      
+
+        background: rgb(255, 255, 255); 
+      }
+    }
     button {
       margin-top: auto;
     }
-  }
+  
+      /* Handle */
+      ::-webkit-scrollbar-thumb {
+        background: rgb(246, 242, 242); 
+        border-radius: 10px;
+      }
+      
+      /* Handle on hover */
+      ::-webkit-scrollbar-thumb:hover {
+        background: grey; 
+      }
+  
   
