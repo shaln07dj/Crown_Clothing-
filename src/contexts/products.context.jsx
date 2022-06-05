@@ -10,8 +10,10 @@ export const ProductsContext = createContext({
 
 export const ProductsProvider = ({ children }) => {
   const [products, setProducts] = useState([]);
-  useEffect(() =>{
+  useEffect(() =>{ 
+    console.log('hello')
     addCollectionAndDocuments('categories', SHOP_DATA)
+   
   },[])
   const value = { products };
   return (
